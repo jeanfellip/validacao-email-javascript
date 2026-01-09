@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de E-mail</title>
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-wrapper">
+        <h2>Verificador de E-mail</h2>
+
+        <form id="emailForm">
+            <label for="email">Informe seu e-mail:</label>
+            <input 
+                type="text" 
+                id="email" 
+                name="email" 
+                placeholder="seuemail@exemplo.com"
+            >
+            <button type="submit">Validar</button>
+        </form>
+
+        <div id="message" class="feedback"></div>
+    </div>
+
+    <!-- Link do JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
