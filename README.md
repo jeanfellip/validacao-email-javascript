@@ -1,36 +1,28 @@
-# Validação de Campo de E-mail com JavaScript
+# Validação de E-mail com JavaScript
 
-Este projeto foi desenvolvido como atividade prática da disciplina **Desenvolvimento em JavaScript**, do curso superior de **Análise e Desenvolvimento de Sistemas**, com o objetivo de aplicar conceitos fundamentais de validação de dados em formulários web.
+Este projeto foi desenvolvido como trabalho prático da disciplina **Desenvolvimento em JavaScript**, do curso de **Análise e Desenvolvimento de Sistemas**. A atividade teve como foco a criação de um formulário web simples, utilizando HTML, CSS e JavaScript, com o objetivo de aplicar conceitos básicos de validação de dados no frontend.
 
-## 🎯 Objetivo do Trabalho
-O principal objetivo da atividade foi implementar um formulário HTML contendo um campo de e-mail, realizando sua validação por meio da linguagem JavaScript, sem a necessidade de recarregamento da página, proporcionando uma melhor experiência ao usuário.
+## Objetivo do trabalho
+O objetivo deste trabalho foi implementar a validação de um campo de e-mail em um formulário HTML, verificando se o valor informado segue um formato válido, além de exibir mensagens de erro ou sucesso ao usuário sem a necessidade de recarregar a página.
 
-## 🛠️ Tecnologias Utilizadas
-- HTML5  
-- CSS3  
-- JavaScript  
+## Tecnologias utilizadas
+- HTML
+- CSS
+- JavaScript
 
-## ⚙️ Funcionamento da Validação
-A validação do e-mail ocorre em duas etapas:
+## Funcionamento da validação
+A validação do campo de e-mail é realizada no lado do cliente, por meio de JavaScript. Para isso, foi utilizada uma expressão regular (Regex), responsável por verificar se o e-mail informado possui um formato válido, como a presença do caractere “@” e de um domínio.
 
-1. **Validação de formato**  
-   Utiliza expressões regulares (Regex) para verificar se o valor informado segue o padrão esperado de um endereço de e-mail, garantindo a presença de elementos essenciais como o caractere “@” e o domínio.
+Quando o valor informado não atende ao padrão esperado, o sistema exibe uma mensagem de erro orientando o usuário. Caso contrário, uma mensagem de validação é apresentada, indicando que o formato do e-mail é válido.
 
-2. **Validação de domínio por lista conhecida**  
-   Após a validação do formato, o domínio do e-mail é comparado com uma lista de provedores de e-mail comumente utilizados, como `gmail.com`, `outlook.com` e `yahoo.com`. Essa abordagem reduz a aceitação de domínios claramente inválidos ou digitados incorretamente.
+## Sobre a validação de domínio
+Neste projeto, não foi implementada a verificação da existência real do domínio do e-mail informado. Esse tipo de validação exige consultas a servidores DNS, como a verificação de registros MX, o que não pode ser feito diretamente em JavaScript executado no navegador, devido a restrições de segurança.
 
-## ❗ Por que não há validação real de domínio?
-A verificação da existência real de um domínio de e-mail exige consultas a registros DNS, como os registros MX (Mail Exchange). No entanto, esse tipo de consulta **não pode ser realizado diretamente em JavaScript executado no navegador**, devido a restrições de segurança impostas pelos próprios navegadores.
+Em aplicações reais, essa validação costuma ser realizada no backend ou complementada com o envio de e-mails de confirmação. Para os objetivos desta atividade acadêmica, optou-se por manter a validação apenas no escopo do frontend.
 
-Em aplicações reais, essa validação é normalmente realizada no **backend**, utilizando linguagens e serviços capazes de consultar servidores DNS, podendo ainda ser complementada com o envio de e-mails de confirmação para garantir a autenticidade do endereço informado.
+## Como executar o projeto
+Para executar o projeto, basta abrir o arquivo `index.html` em qualquer navegador web moderno.
 
-Dessa forma, a validação implementada neste projeto limita-se ao escopo do frontend, atendendo aos objetivos propostos pela atividade acadêmica.
-
-## ▶️ Como Executar o Projeto
-1. Faça o download ou clone este repositório
-2. Abra o arquivo `index.html` em qualquer navegador moderno
-3. Insira um endereço de e-mail e clique em **Validar**
-
-## 👨‍🎓 Autor
+## Autor
 Jean Fellipe Constantino Gonçalves  
-Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas – UNOPAR
+Curso de Análise e Desenvolvimento de Sistemas – UNOPAR
